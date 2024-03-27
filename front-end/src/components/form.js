@@ -1,4 +1,4 @@
-import React, { /*useRef*/ } from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 
 const FormContainer = styled.form`
@@ -37,8 +37,8 @@ const Button = styled.button`
   height: 42px;
 `;
 
-const Form = () => {
-//   const ref = useRef();
+const Form = ({ onEdit }) => {
+  const ref = useRef();
 
   return (
     <FormContainer>
