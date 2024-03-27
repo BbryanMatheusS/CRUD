@@ -1,10 +1,14 @@
 import express from "express";
-import cors from "cors"
+import cors from "cors";
+
+import useRoutes from "./routes/users.js";
 
 
-const app = express()
+const app = express();
 
-app.use(express.json())
-app.use(cors())
+app.use(express.json());
+app.use(cors());
 
-app.listen(8800)
+app.use("/", useRoutes);
+
+app.listen(8800);

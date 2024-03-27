@@ -4,5 +4,5 @@ export const db = mysq.createConnection({
     host: "localhost",
     user: "root",
     password: "admin",
-    database: "crud2"
+    database: "crud"
 });
